@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Add this block to pass configuration to the internal Vite compiler
+  vite: {
+    base: '/tt/',
+  }
 });
